@@ -1,0 +1,150 @@
+﻿/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+/*background-image: url('https://getwallpapers.com/wallpaper/full/9/3/7/1267865-movie-poster-wallpaper-1920x1080-for-mobile-hd.jpg');*/
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+.lienBouton{
+  border: none; 
+  background-color: 
+  transparent;
+  color:rgba(255, 255, 255, 0.678);
+}
+input[type="submit"].lienBouton:hover{
+  color:rgb(229, 229, 229);
+}
+.fondBlancRadial{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-block: 50px;
+    margin-top: -48px;
+    margin-bottom: -48px;
+}
+
+.container{
+height: 100%;
+align-content: center;
+
+}
+
+.imageDeFond{
+    background-image: url('https://getwallpapers.com/wallpaper/full/9/3/7/1267865-movie-poster-wallpaper-1920x1080-for-mobile-hd.jpg') ;
+
+    background-attachment: fixed;
+    
+}
+
+.card{
+
+margin-top: auto;
+margin-bottom: auto;
+
+background-color: rgba(0,0,0,0.8) !important;
+}
+
+.white{
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: -10px;
+top: -10px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+.starRating:not(old){
+    display        : inline-block;
+    width          : 7.5em;
+    height         : 1.5em;
+    overflow       : hidden;
+    vertical-align : bottom;
+  }
+  .starRating:not(old) > input{
+    margin-right : -100%;
+    opacity      : 0;
+  }
+  .starRating:not(old) > label{
+    display         : block;
+    float           : right;
+    position        : relative;
+    background      : url('https://upload.wikimedia.org/wikipedia/commons/e/e7/Empty_Star.svg'); 
+    background-size : contain;
+  }
+  .starRating:not(old) > label:before{
+    content         : '';
+    display         : block;
+    width           : 1.5em;
+    height          : 1.5em;
+    background      : url('https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png'); 
+    background-size : contain;
+    opacity         : 0;
+    transition      : opacity 0.2s linear;
+  }
+  .starRating:not(old) > label:hover:before,
+  .starRating:not(old) > label:hover ~ label:before,
+  .starRating:not(:hover) > :checked ~ label:before{
+     opacity : 1;
+  }
